@@ -1,0 +1,20 @@
+Cách chạy project:
+
+- Tạo môi trường ảo: 
++ cd chat_backend
++ python -m venv venv
++ venv\Scripts\activate
+
+- Cài đặt thư viện
++ python.exe -m pip install --upgrade pip
++ pip install django
++ pip install daphne
++ pip install djangorestframework
++ pip install channels
++ pip install python-dotenv
++ pip install django-cors-headers
++ pip install djangorestframework-simplejwt
++ pip install cohere
+
+
+python manage.py runserver
