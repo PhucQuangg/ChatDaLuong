@@ -18,3 +18,11 @@ Cách chạy project:
 
 
 python manage.py runserver
+
+client: 
+bao@gmail.com 
+123
+
+admin:
+admin@gmail.com
+123456
