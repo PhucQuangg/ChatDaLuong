@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Chat</title>
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+
+<body>
+    <div class="container">
+        <h2>Chat với Admin</h2>
+        
+        <div id="login-form">
+            <input type="text" id="email" placeholder="Email">
+            <input type="password" id="password" placeholder="Mật khẩu">
+            <button onclick="login()">Đăng nhập</button>
+        </div>
+        
+        <div id="chat-section" style="display: none;">
+            <button onclick="logout()">Đăng xuất</button>
+            <div class="chat-box" id="chat-box"></div>
+            <input type="text" id="messageInput" placeholder="Nhập tin nhắn">
+            <button onclick="sendMessage()">Gửi</button>
+            
+        </div>
+    </div>
+    <div class="container">
+
+        
+        <div id="register-form">
+            <h2>Đăng ký tài khoản</h2>
+            <input type="text" id="username-register" placeholder="Tên người dùng">
+            <input type="text" id="email-register" placeholder="email">
+            <input type="password" id="password-register" placeholder="Mật khẩu">
+            <button onclick="register()">Đăng ký</button>
+        </div>
+        
+    </div>
+
+    <script src="js/user.js"></script>
+</body>
+</html>

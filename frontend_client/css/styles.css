@@ -1,0 +1,66 @@
+body { font-family: Arial, sans-serif; color: #000; }
+.chat-box { width: auto; height: 300px; overflow-y: auto;  }
+.chat-container { border: 1px solid black; padding: 10px; margin: 10px; display: inline-block; }
+.message { margin: 5px; padding: 8px; border-radius: 5px; }
+.user-message { background: #d1e7fd; text-align: right; }
+.admin-message { background: #fdd1d1; text-align: left; }
+.ai-message { background: #a3ef60; text-align: left; }
+
+.unknown-message { background: #f8ee36; text-align: left; }
+
+.chat-widget {
+    position: fixed;
+    bottom: 90px;  /* Giảm khoảng cách để tránh bị đè lên nút */
+    right: 20px;
+    width: 360px;
+    height: auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 1000; /* Đảm bảo chat box có z-index đủ cao */
+}
+
+.chat-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+#messageInput {
+    border: none;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    border-top: 1px solid #ccc;
+}
+button {
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+  
+    cursor: pointer;
+    border-top: 1px solid #ccc;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.chat-toggle-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 1020; }
