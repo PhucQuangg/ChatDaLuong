@@ -1,6 +1,6 @@
 import cohere
 
-API_KEY = "HKALTJdnC4pBKNoSSk8FMgrCcl1C04NuE7UKnm2m"
+API_KEY = "//KEY API CHATBOT CỦA BẠN"
 co = cohere.Client(API_KEY)
 
 class CohereService:
